@@ -1,12 +1,14 @@
 import React from 'react';
 import {View, Text, StyleSheet, Image} from 'react-native';
 import {Display} from '../utils';
-import {Fonts, Colors, Images} from '../contents';;
+import {Fonts, Colors} from '../contents';;
 
 const WelcomeCard = ({title, content, image}) => {
+  let imager ={ uri: 'https://restaumatic-production.imgix.net/uploads/restaurants/275281/logo/1689151634.png?auto=compress%2Cformat&crop=focalpoint&fit=clip&h=500&w=500'};
+
   return (
     <View style={styles.container}>
-      <Image style={styles.image} source={Images[image]} resizeMode="contain" />
+      <Image style={styles.image} source={imager} resizeMode="contain" />
       <Text style={styles.titleText}>{title}</Text>
       <Text style={styles.contentText}>{content}</Text>
     </View>

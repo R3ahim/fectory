@@ -1,6 +1,6 @@
 import { View, Text ,TextInput,StyleSheet,StatusBar,Image} from 'react-native'
 import React,{useEffect} from 'react'
-import { Colors,Fonts,Images } from '../contents';
+import { Colors,Fonts } from '../contents';
 import { Display } from '../utils';
 
 
@@ -9,6 +9,8 @@ useEffect(()=>{
     setTimeout(() => { navigation.navigate('Welcome')
   }, 3000);
 })
+let imager ={ uri: 'https://restaumatic-production.imgix.net/uploads/restaurants/275281/logo/1689151634.png?auto=compress%2Cformat&crop=focalpoint&fit=clip&h=500&w=500'};
+
   return (
     <View style={styles.container}>
            <StatusBar
@@ -16,7 +18,7 @@ useEffect(()=>{
         backgroundColor={Colors.DEFAULT_GREEN}
         translucent
       />
-        <Image source={Images.PLATE} resizeMode="contain" style={styles.image} />
+        <Image source={imager} resizeMode="contain" style={styles.image} />
         <Text style={styles.titleText}>FooDelivery</Text>
      
     </View>

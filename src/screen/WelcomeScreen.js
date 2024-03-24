@@ -1,6 +1,6 @@
 
 import React,{useState,useRef}from 'react'
-import { Colors,Fonts,General,Images ,} from '../contents';
+import { Colors,Fonts,General ,} from '../contents';
 import {Display} from '../utils';
 import {
     View,
