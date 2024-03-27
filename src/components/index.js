@@ -1,5 +1,6 @@
 import WelcomeCard from './WelcomeCard';
 import Separator from './Separator';
+import Carousel from './Carousel';
 // import ToggleButton from './ToggleButton';
 // import FlagItem from './FlagItem';
 // import CategoryMenuItem from './CategoryMenuItem';
@@ -11,7 +12,9 @@ import Separator from './Separator';
 
 export {
   WelcomeCard,
+  Carousel,
   Separator,
+
 //   ToggleButton,
 //   FlagItem,
 //   CategoryMenuItem,

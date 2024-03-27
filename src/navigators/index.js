@@ -12,10 +12,10 @@ const Navigators = () => {
   return (
    <NavigationContainer >
    <Stack.Navigator screenOptions={{headerShown:false}}>
+    <Stack.Screen name='Plear' component={Plear}/>
     <Stack.Screen name='Splash' component={SplashScreen}/>
     <Stack.Screen name='Welcome' component={WelcomeScreen}/>
     <Stack.Screen name='Signin' component={SigninScreen}/>
-    <Stack.Screen name='Plear' component={Plear}/>
    
 
    </Stack.Navigator>
@@ -24,3 +24,4 @@ const Navigators = () => {
 }
 
 export default Navigators
+

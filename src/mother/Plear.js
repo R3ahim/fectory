@@ -29,7 +29,7 @@ export default function Plear() {
       <Tab.Navigator screenOptions={screenOptions}>
       <Tab.Screen 
           name="Home" 
-          component={Home} 
+          component={Portfolio} 
           options={{
             tabBarIcon: ({focused})=>{
               return (
@@ -43,7 +43,7 @@ export default function Plear() {
           />
            <Tab.Screen 
           name="Portfolio" 
-          component={Portfolio} 
+          component={Home} 
           options={{
             tabBarIcon: ({focused})=>{
               return (
